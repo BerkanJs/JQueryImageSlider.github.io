@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="İMG/1.webp" alt="1">
+                <h1>Emrah</h1>
+                <div class="details">
+                    <h2>Emrah</h2>
+                    <p>Tarih Profesörü ve Eu4 Duayeni</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="İMG/2.webp" alt="2">
+                <h1>Elon</h1>
+                <div class="details">
+                    <h2>Elon Musk</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo quaerat quia accusantium ea sequi.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="İMG/3.jpg" alt="3">
+                <h1>Mike</h1>
+                <div class="details">
+                    <h2>Mike</h2>
+                    <p>Web 3 Developer</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="İMG/4.jpg" alt="4">
+                <h1>Kaya</h1>
+                <div class="details">
+                    <h2>Kaya Toprak</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="İMG/5.webp" alt="5">
+                <h1>Mark</h1>
+                <div class="details">
+                    <h2>Mark Zuckerberg</h2>
+                    <p>Facebook kurucusu </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        jQuery(document).ready(function($){
+
+
+
+            $('.slider-img').on('click', function(){
+                $('.slider-img').removeClass('active');
+                $(this).addClass('active');
+               
+
+            })
+
+            $('.slider-img').on('dblclick', function(){
+                $(this).css("transition", "all 1s ease")
+                $(this).removeClass('active');
+               
+
+            })
+
+        });
+    </script>
+    
+    
+</body>
+</html>
